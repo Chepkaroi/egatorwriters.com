@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="With competitive pricing and a commitment to customer satisfaction, egatorwriters is the perfect solution for all your content writing needs. We are an academic writing company that has a transparent goal to work with competent and creative specialists. If it is you, we have online writing job in Kenya for you!" />
+    <meta name="keywords" content="EGATOR WRITERS" />
+    <meta name="developer" content="EGATOR WRITERS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="EGATOR DEVELOPERS">
+    <meta property="og:title" content="EGATOR DEVELOPERS">
+    <meta property="og:description" content="With competitive pricing and a commitment to customer satisfaction, egatorwriters is the perfect solution for all your content writing needs. We are an academic writing company that has a transparent goal to work with competent and creative specialists. If it is you, we have online writing job in Kenya for you!">
+
+    <title>EGATOR DEVELOPERS</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script>
+        function removeErrorBox() {
+            var errorBox = document.getElementById('error-box');
+            errorBox.parentNode.removeChild(errorBox);
+        }
+
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var confirmPasswordField = document.getElementById("confirmPassword");
+            var showHide = document.getElementById("showHide");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                confirmPasswordField.type = "text";
+                showHide.innerHTML = "Hide Password";
+            } else {
+                passwordField.type = "password";
+                confirmPasswordField.type = "password";
+                showHide.innerHTML = "Show Password";
+            }
+        }
+
+        function nospaces(t) {
+            if (t.value.match(/\s/g)) {
+                t.value = t.value.replace(/\s/g, '');
+            }
+        }
+    </script>
+      <style>
+        .hover-button {
+          background-color: black;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 20px;
+          width: 80%;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .hover-button:hover {
+          background-color: white;
+          color: black;
+          border: black 1px solid;
+        }
+        .hover-button a{
+            text-decoration: none;
+            color: rgb(107, 104, 104);
+        }
+        .hover-button a:hover{
+            text-decoration: none;
+            color: black;
+        }
+      </style>
+    
+</head>
+
+<body>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+        <div class="container">
+            <div class="card login-card">
+                <div class="row no-gutters">
+                    <div class="col-md-5">
+                        <img src="assets/images/back.jpg" alt="signup" class="login-card-img">
+                    </div>
+                    <div class="col-md-7" style="margin-top:-50px;">
+                        <div class="card-body">
+                            <div class="agileinfo-logo mt-5">
+                                <h3 class="text-left"> <a href="index.html">EGATOR DEVELOPERS</a></h3>
+                            </div>
+
+                            <p class="login-card-description" style="font-size:18px;">Create your account to complete tasks for clients now!</p>
+
+                            <form action="signup.html" method="post">
+                                <div class="form-group">
+                                    <label>NAME</label>
+                                    <div>
+                                        <input id="username" type="text" name="name" required><br><br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>USERNAME</label>
+                                    <div>
+                                        <input id="username" type="text" name="user_name" required><br><br>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="mb-3">
+                                        <label class="mb-2 fw-500">Country<span class="text-danger ms-1">*</span></label>
+                                       <select name="country" class="form-control ms-0" placeholder="Select Country" value="" data-required="true" required>
+                                            <option value="">Please Select Country</option>
+                                            <option value="ke">Kenya</option>
+                                            <option value="tz">Tanzania</option>
+                                            <option value="ug">Uganda</option>
+                                            <option value="rw">Rwanda</option>
+                                            <option value="bi">Burundi</option>
+                                            <option value="ng">Nigeria</option>
+                                            <option value="zm">Zambia</option>
+                                            <option value="mw">Malawi</option>
+                                            <option value="gh">Ghana</option>
+                                            <option value="cm">Cameroon</option>
+                                            <option value="iv">Ivory Cost</option>
+                                            <option value="bw">Botswana</option>
+                                            <option value="us">International/Worldwide</option>
+
+                                       </select>
+                                    </div>
+                                </div>
+                                    <label>PHONE NUMBER</label>
+                                    <div>
+                                        <input id="username" type="number" name="phoneNumber" required><br><br>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 60px; margin-right: 60px;" class="form-group">
+                                    <label>PASSWORD</label>
+                                    <div>
+                                        <div style="display: flex; flex-direction: column;" class="input-group" id="show_hide_password">
+                                            <div><input class="form-control" onkeyup="nospaces(this)" name="password" id="password" required placeholder="Enter Your Password" minlength="3" type="password"></div>
+                                            <div><input class="form-control mt-2" onkeyup="nospaces(this)" name="confirmPassword" id="confirmPassword" required placeholder="Confirm Your Password" minlength="3" type="password"></div>
+                                            <div class="input-group-addon mt-2" style="margin-left:4px;">
+                                                <input type="checkbox" id="showHideToggle" onclick="togglePasswordVisibility()"><label for="showHideToggle" id="showHide">Show Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn" style="display: flex; width: 100%; justify-content: center;">
+                                    <button class="hover-button"><a href="payment.html";">SIGN UP</a></button>
+                                </div>
+                            </form>
+                            <div style="margin-left: 50px;" class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label  class="form-check-label tx-15" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <p style="margin-left: 50px;" class="login-card-footer-text">Already have an account? <a href="login.html" class="text-primary"><small><b>LOGIN NOW</b></small></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?70182';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#005c45",
+                "ctaText": "Whatsapp us",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "15",
+                "marginRight": "10",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "EGATOR DEVELOPERS",
+                "brandSubTitle": "24/7 Online Support",
+                "brandImg": "assets/images/egator.jpg",
+                "welcomeText": "Hi there!\nHow can We help you?",
+                "messageText": "Hello, I have a question about EGATOR DEVELOPERS ( https://egatorwriters.com ) ",
+                "backgroundColor": "#005c45",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "25438737858"
+            }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+</body>
+</html>
